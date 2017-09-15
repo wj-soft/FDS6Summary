@@ -1,0 +1,36 @@
+# Background
+## 배운 것
+- main.html의 .visual : css animation 기능
+- login layout 복습 / form tag 학습
+- 속성 6가지
+- color, image, repeat, position, size, attachment
+## 배경 다중 적용
+- 하나의 객체에 배경을 다중으로 줄 수 있음
+- 색상, 이미지를 함께 쓰는 속기법으로는 다중으로 줄수 없음
+- 다중으로 적용할때는 이미지 속성 먼저 선언한 후, 색상 속성을 나중에 선언 (우선순위 문제)
+- 다중으로 쓸때는 가장 위에 올려놓고 싶은 배경이미지를 가장 먼저 선언
+## Animation
+ 1. 적용할 클래스요소에 animation: 이름 시간(duration); (필수)
+ 2. animation-fill-mode: forwards;를 하면 완료지점 상태를 유지
+ 3. animation-iteration-count: # ~ infinite;
+ 4. animation-direction: alternate; (순방향-역방향 순환)
+ 5. animation-delay: #s; 지연시키기
+ 6. animation-timing-function: ease-in-out; 시간조절 효과
+ - cubic-bezier사이트로 내가 원하는대로 적용 가능
+ 7. animation-play-state: paused;
+ 8. 속기법] animation: text-ani 1s forwards infinite alternate ease-in-out 1s;
+## form
+ - https://www.miketaylr.com/pres/html5/forms2.html
+ 1. form - fieldset(그루핑) - legend(타이틀)
+ 2. 각각 type 설정을 통해 형식을 부여 (text, password, tel, etc)
+ 3. label의 for에 input의 id값을 부여해서 연결
+ 4. input에 placeholder속성을 통해 입력란에 미리 글씨 입력가능
+ 5. required: 해당 input 영역이 필수로 채워져야 함을 나타냄
+ 6. input에서 label을 쓰지 못하는 경우 title 속성값이라도 넣어줘야 함.
+## 구조선택자
+  1. nth-child는 jquery의 그것과 거의 같음.
+  2. first-child, nth-child(#), last-child  
+  3. 태그:nth-of-type() 해당 태그 안에서만 선택할 수 있는 구조선택자
+  4. 순서는 일반 프로그래밍 언어의 0,1,2... 의 순서와 달리 1,2,3... 순서임
+## box-shadow
+  1. 속성으로 x좌표, y좌표, 블러값, 확장정도값, 색상 순으로 입력 가능
